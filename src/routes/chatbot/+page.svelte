@@ -9,8 +9,6 @@
         if (userMessage.trim()) {
             messages = [...messages, { text: userMessage, sender: 'user' }];
             userMessage = '';
-
-            // Simulate a bot response
             setTimeout(() => {
                 messages = [...messages, { text: "This is a bot response.", sender: 'bot' }];
             }, 500);
